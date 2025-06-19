@@ -3,7 +3,7 @@ import { usePDF } from 'react-to-pdf';
 import Resume from './components/Resume';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import CoverLetter from './components/CoverLetter';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
@@ -61,14 +61,15 @@ function AppContent() {
       >
         Download
       </Button>
-      <Button component={Link} to="/" sx={{ mb: 2, mr: 2 }}>
+      <Button component={Link} to="/cv" sx={{ mb: 2, mr: 2 }}>
         {language === 'de' ? 'Lebenslauf' : 'Resume'}
       </Button>
       <Button component={Link} to="/cover-letter" sx={{ mb: 2 }}>
         {language === 'de' ? 'Anschreiben' : 'Cover Letter'}
       </Button>
       <Routes>
-        <Route path="/" element={<div ref={resumeRef}><Resume data={resumeData} /></div>} />
+        <Route path="/" element={<Navigate to="/cv" replace />} />
+        <Route path="/cv" element={<div ref={resumeRef}><Resume data={resumeData} /></div>} />
         <Route path="/cover-letter" element={<div ref={coverLetterRef}><CoverLetter /></div>} />
       </Routes>
     </Container>
