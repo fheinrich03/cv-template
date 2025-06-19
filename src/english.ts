@@ -1,5 +1,16 @@
 import { ResumeData } from "./types/index";
 
+const getCurrentDate = () => {
+  const date = new Date();
+  const options: Intl.DateTimeFormatOptions = { 
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'Europe/Berlin'
+  };
+  return date.toLocaleDateString('en-US', options);
+};
+
 export const englishData: ResumeData = {
   name: "Felix Heinrich",
   title: "Student & Full Stack Software Developer",
@@ -227,4 +238,21 @@ export const englishData: ResumeData = {
       ],
     },
   ],
+  coverLetter: {
+    title: "Application for Working Student Position",
+    recipient: {
+      name: "SRP Team",
+      position: "",
+      company: "SRP - Systementwicklung für Raumbezogene \nPlanung GmbH",
+      address: {
+        street: "Berliner Straße 112a",
+        city: "Berlin",
+        postalCode: "13189"
+      }
+    },
+    date: getCurrentDate(),
+    greeting: "Dear SRP Team",
+    mainText: "I am writing to express my strong interest in the working student position at SRP GmbH. Through my fellow student Nikolaus Häger, I learned that you are looking for goal-oriented working students who can support your team. I am convinced that with my 3 years of professional experience and upcoming graduation, I can be a valuable addition to your team.\n\nAs a computer science student at HTW Berlin with experience at renowned companies such as ImmoScout24 and Deutsche Telekom AG, I bring solid practical knowledge. My expertise includes full-stack development with frontend frameworks like React and Next.js, as well as Spring and Java in the backend. I have experience with cloud services such as AWS, Datadog, and Optimizely, and can independently handle tasks in projects from implementation to release.\n\nMy goal is to systematically develop my existing technical skills and prepare myself for a career as a mid-level developer. I see the working student position as a crucial turning point: Here I want to gain practical experience, familiarize myself with new technologies and workflows, and lay the foundations for my professional career after graduation. I am highly motivated to learn from experienced team members, continuously expand my competencies, and contribute to the company's success.\n\nMy Bachelor's degree in Applied Computer Science is expected to be completed in the summer semester of 2025. I am enrolled as a student until September 30, 2025, and am flexible for a working student position. Thanks to my comprehensive practical experience, I can independently familiarize myself with new technologies and tasks, so that I can contribute productively to project success from the very beginning.\n\nI would be very pleased to contribute my skills at SRP GmbH and develop innovative software solutions together. I would be happy to present my motivation and competencies in more detail in a personal interview.",
+    closing: "Best regards"
+  },
 }; 

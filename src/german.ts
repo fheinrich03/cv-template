@@ -1,5 +1,16 @@
 import { ResumeData } from "./types/index";
 
+const getCurrentDate = () => {
+  const date = new Date();
+  const options: Intl.DateTimeFormatOptions = { 
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    timeZone: 'Europe/Berlin'
+  };
+  return date.toLocaleDateString('de-DE', options);
+};
+
 export const germanData: ResumeData = {
   name: "Felix Heinrich",
   title: "Student & Fullstack-Softwareentwickler",
@@ -227,4 +238,21 @@ export const germanData: ResumeData = {
       ],
     },
   ],
+  coverLetter: {
+    title: "Bewerbung als Werkstudent",
+    recipient: {
+      name: "SRP Team",
+      position: "",
+      company: "SRP - Systementwicklung für Raumbezogene \nPlanung GmbH",
+      address: {
+        street: "Berliner Straße 112a",
+        city: "Berlin",
+        postalCode: "13189"
+      }
+    },
+    date: getCurrentDate(),
+    greeting: "Sehr geehrtes SRP Team",
+    mainText: "Mit großem Interesse bewerbe ich mich als Werkstudent bei der SRP GmbH. Durch meinen Kommilitonen Nikolaus Häger wurde ich darauf aufmerksam, dass Sie zielstrebige Werkstudenten suchen die ihr Team unterstützen können. Ich bin davon überzeugt, dass ich mit meiner 3-jährigen Berufserfahrung und bald abgeschlossenem Studium eine Bereicherung für Ihr Team sein kann.\n\nAls Informatikstudent der HTW Berlin mit Erfahrung bei renommierten Unternehmen wie ImmoScout24 und der Deutschen Telekom AG bringe ich fundierte praktische Kenntnisse mit. Meine Expertise umfasst Full-Stack-Entwicklung mit Frontend Frameworks wie React und Next.js sowie Spring und Java im Backend. Ich habe Erfahrung mit Cloud Services wie AWS, Datadog und Optimizely und kann selbstständig Aufgaben in Projekten von der Implementierung bis zum Release bearbeiten.\n\nMein Ziel ist es, meine bereits vorhandenen technischen Fähigkeiten gezielt weiterzuentwickeln und mich systematisch auf eine Karriere als Mid-Level-Entwickler vorzubereiten. Die Werkstudenten-Tätigkeit sehe ich als entscheidende Weichenstellung: Hier möchte ich praxisnahe Erfahrungen sammeln, mich in neue Technologien und Arbeitsabläufe einarbeiten und die Grundlagen für meinen beruflichen Werdegang nach dem Studium legen. Dabei bin ich hoch motiviert, von erfahrenen Teammitgliedern zu lernen, meine Kompetenzen kontinuierlich zu erweitern und zum Unternehmenserfolg beizutragen.\n\nMein Bachelorabschluss in Angewandter Informatik wird voraussichtlich im Sommersemester 2025 erfolgen. Bis zum 30.09.2025 bin ich als Student immatrikuliert und flexibel für eine Werkstudenten-Tätigkeit verfügbar. Dank meiner umfassenden Praxiserfahrung kann ich mich selbstständig in neue Technologien und Aufgabenstellungen einarbeiten, sodass ich von Beginn an produktiv zum Projekterfolg beitragen kann.\n\nIch würde mich sehr freuen, meine Fähigkeiten bei SRP GmbH einzubringen und gemeinsam innovative Softwarelösungen zu entwickeln. Gerne stelle ich Ihnen in einem persönlichen Gespräch meine Motivation und Kompetenzen näher vor.",
+    closing: "Mit freundlichen Grüßen"
+  },
 };

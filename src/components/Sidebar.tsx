@@ -84,7 +84,7 @@ const Sidebar: React.FC<{ data: ResumeData }> = ({ data }) => {
         Hard Skills
       </Typography>
       <Stack spacing={1} mb={3}>
-        {hardSkills.map((group: Skill, i: number) => {
+        {hardSkills.map((group, i) => {
           // Sort skills by level ascending (1 = highest)
           const sortedItems = [...group.items].sort((a, b) => {
             return skillLevelMap[a.level].order - skillLevelMap[b.level].order;
@@ -95,7 +95,7 @@ const Sidebar: React.FC<{ data: ResumeData }> = ({ data }) => {
                 {group.category}
               </Typography>
               <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
-                {sortedItems.map((skill: SkillItem, idx) => {
+                {sortedItems.map((skill, idx) => {
                   const level = getSkillLevel(skill);
                   return (
                     <Chip

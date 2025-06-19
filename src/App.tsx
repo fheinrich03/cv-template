@@ -2,6 +2,8 @@ import { Button, Container, CssBaseline, ThemeProvider, createTheme, ButtonGroup
 import { usePDF } from 'react-to-pdf';
 import Resume from './components/Resume';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
+import CoverLetter from './components/CoverLetter';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
@@ -15,14 +17,29 @@ const theme = createTheme({
 });
 
 function AppContent() {
-  const { toPDF, targetRef } = usePDF({
-    filename: 'lebenslauf.pdf',
+  const { language, setLanguage, resumeData } = useLanguage();
+  const location = useLocation();
+  
+  const { toPDF: toPDFResume, targetRef: resumeRef } = usePDF({
+    filename: language === 'de' ? 'lebenslauf.pdf' : 'resume.pdf',
     page: { format: 'a4', orientation: 'portrait' }
   });
-  const { language, setLanguage, resumeData } = useLanguage();
+  
+  const { toPDF: toPDFCoverLetter, targetRef: coverLetterRef } = usePDF({
+    filename: language === 'de' ? 'anschreiben.pdf' : 'cover-letter.pdf',
+    page: { format: 'a4', orientation: 'portrait' }
+  });
+
+  const handleDownload = () => {
+    if (location.pathname === '/cover-letter') {
+      toPDFCoverLetter();
+    } else {
+      toPDFResume();
+    }
+  };
 
   return (
-    <Container sx={{ py: 4 }}>
+    <Container sx={{ py: 4, backgroundColor: "#bdbdbd", minHeight: "100vh" }}>
       <ButtonGroup sx={{ mb: 2, mr: 2 }}>
         <Button
           variant={language === 'de' ? 'contained' : 'outlined'}
@@ -39,14 +56,21 @@ function AppContent() {
       </ButtonGroup>
       <Button
         variant="contained"
-        onClick={() => toPDF()}
-        sx={{ mb: 2 }}
+        onClick={handleDownload}
+        sx={{ mb: 2, mr: 2 }}
       >
-        {language === 'de' ? 'Als PDF herunterladen' : 'Download as PDF'}
+        Download
       </Button>
-      <div ref={targetRef}>
-        <Resume data={resumeData} />
-      </div>
+      <Button component={Link} to="/" sx={{ mb: 2, mr: 2 }}>
+        {language === 'de' ? 'Lebenslauf' : 'Resume'}
+      </Button>
+      <Button component={Link} to="/cover-letter" sx={{ mb: 2 }}>
+        {language === 'de' ? 'Anschreiben' : 'Cover Letter'}
+      </Button>
+      <Routes>
+        <Route path="/" element={<div ref={resumeRef}><Resume data={resumeData} /></div>} />
+        <Route path="/cover-letter" element={<div ref={coverLetterRef}><CoverLetter /></div>} />
+      </Routes>
     </Container>
   );
 }
@@ -56,7 +80,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <LanguageProvider>
-        <AppContent />
+        <Router>
+          <AppContent />
+        </Router>
       </LanguageProvider>
     </ThemeProvider>
   );

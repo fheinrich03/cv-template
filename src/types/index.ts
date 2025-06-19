@@ -57,4 +57,21 @@ export interface ResumeData {
   skillLevels: SkillLevel[];
   timeline: TimelineEntry[];
   hardSkills: Skill[];
+  coverLetter: {
+    title: string;
+    recipient: {
+      name: string;
+      position: string;
+      company: string;
+      address: {
+        street: string;
+        city: string;
+        postalCode: string;
+      };
+    };
+    date: string;
+    greeting: string;
+    mainText: string;
+    closing: string;
+  };
 } 
