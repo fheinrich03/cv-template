@@ -61,7 +61,6 @@ export interface ResumeData {
     title: string;
     recipient: {
       name: string;
-      position: string;
       company: string;
       address: {
         street: string;

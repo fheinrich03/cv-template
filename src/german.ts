@@ -242,7 +242,6 @@ export const germanData: ResumeData = {
     title: "Bewerbung als Werkstudent Softwareentwickler",
     recipient: {
       name: "SRP Team",
-      position: "",
       company: "SRP - Systementwicklung für Raumbezogene \nPlanung GmbH",
       address: {
         street: "Berliner Straße 112a",
@@ -251,8 +250,8 @@ export const germanData: ResumeData = {
       }
     },
     date: getCurrentDate(),
-    greeting: "Sehr geehrtes SRP Team",
+    greeting: "Liebes SRP Team",
     mainText: "Mit großem Interesse möchte ich mich als Werkstudent bei der SRP GmbH bewerben. Durch meinen Kommilitonen Nikolaus Häger bin ich darauf aufmerksam geworden, dass Sie zielstrebige Werkstudenten suchen, die ihr Team unterstützen können. Mit meiner 3-jährigen Berufserfahrung und bevorstehenden Studienabschluss bin ich überzeugt, eine wertvolle Ergänzung für Ihr Team zu sein.\n\nAls Informatikstudent der HTW Berlin mit Erfahrung bei renommierten Unternehmen wie ImmoScout24 und der Deutschen Telekom AG bringe ich fundierte praktische Kenntnisse mit. Meine Expertise umfasst Full-Stack-Entwicklung mit Frontend Frameworks wie React und Next.js sowie Spring und Java im Backend. Ich habe Erfahrung mit Cloud Services wie AWS, Datadog und Optimizely und kann selbstständig Aufgaben in Projekten von der Implementierung bis zum Release bearbeiten.\n\nMein Ziel ist es, meine bereits vorhandenen technischen Fähigkeiten gezielt weiterzuentwickeln und mich systematisch auf eine Karriere als Mid-Level-Entwickler vorzubereiten. Als Ihr Werkstudent kann ich weitere praxisnahe Erfahrungen sammeln, mich in neue Technologien und Arbeitsabläufe einarbeiten und so die Grundlagen für meinen beruflichen Werdegang nach dem Studium legen. Ich möchte gerne zusammen mit erfahrenen Teammitgliedern meine Kompetenzen erweitern und zum Unternehmenserfolg beitragen.\n\nMein Bachelorabschluss in Angewandter Informatik wird voraussichtlich im Sommersemester 2025 erfolgen. Bis zum 30.09.2025 bin ich als Student immatrikuliert und flexibel für eine Werkstudenten-Tätigkeit verfügbar. Dank meiner umfassenden Praxiserfahrung kann ich mich selbstständig in neue Technologien und Aufgabenstellungen einarbeiten, sodass ich mich von Beginn an produktiv in Ihre Arbeitsabläufe einbringen kann.\n\nIch freue mich darauf, meine Fähigkeiten bei SRP GmbH einzubringen und gemeinsam innovative Softwarelösungen zu entwickeln. Gerne stelle ich Ihnen in einem persönlichen Gespräch meine Motivation und fachlichen Kompetenzen detaillierter vor.",
-    closing: "Mit freundlichen Grüßen"
+    closing: "Mit herzlichen Grüßen"
   },
 };
