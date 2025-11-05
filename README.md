@@ -1,31 +1,38 @@
 # CV & Cover Letter Template
 
-This React project creates a professional looking CV and Cover letter from the data you input.
+This React project creates a professional-looking CV and Cover Letter
+from the data you input.
 
-## Enter your CV & Cover Letter information
+## 📄 Enter Your CV & Cover Letter Information
 
-- **CV & Cover Letter Data**: You can enter your data your CV data and cover letter in `german.ts` and `english.ts`
-- **Insituation Logos**: You can enter images for your work and education instituations in `assets/` folder and map them in `Timeline.tsx getCompanyLogo()` function.
-- **Profile Picture**: 
+-   **CV & Cover Letter Data**: Enter your CV and cover letter data in
+    `german.ts` and `english.ts`.
+-   **Institution Logos**: Place images for your work and education
+    institutions in the `assets/` folder and map them in the
+    `getCompanyLogo()` function inside `Timeline.tsx`.
+-   **Profile Picture**: Add your profile picture in the `public/assets/`
+    folder and reference it in the `Sidebar.tsx` component
 
-## Available Scripts
+## 🚀 Running the Project
 
-In the project directory, you can run:
+``` bash
+npm install   # Install dependencies
+npm start     # Run the project
+# Open http://localhost:3000 to view it in your browser
+```
 
-### `npm start`
+## 🔗 Adding Hyperlinks to PDF
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After exporting your resume as a PDF, you can optionally add hyperlinks
+to your contact information using
+[PDFescape](https://www.pdfescape.com/), a free online PDF editor.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Steps:
 
-## Adding Hyperlinks to PDF
+1.  Upload your exported PDF.
+2.  Add clickable links to your email, phone number, location, LinkedIn,
+    and GitHub.
+3.  Save the modified PDF with all hyperlinks intact.
 
-After exporting your resume as a PDF, you can optionally add hyperlinks to your contact information using [PDFescape](https://www.pdfescape.com/), a free online PDF editor. This allows you to:
-
-1. Upload your exported PDF
-2. Add clickable links to your email, phone number, location, LinkedIn, and GitHub
-3. Save the modified PDF with all hyperlinks intact
-
-This gives you the flexibility to have a clean PDF export from the application while still maintaining interactive elements in the final document.
+This gives you a clean, professional PDF export while maintaining
+interactive elements in the final document.
