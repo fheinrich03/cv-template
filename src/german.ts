@@ -60,6 +60,16 @@ export const germanData: ResumeData = {
       description: "Unregelmäßige Anwendung",
     },
   ],
+  timelineCategories: [
+    {
+      type: "experience",
+      label: "Berufserfahrung",
+    },
+    {
+      type: "education",
+      label: "Bildungsweg",
+    },
+  ],
   timeline: [
     {
       type: "experience",
@@ -117,7 +127,7 @@ export const germanData: ResumeData = {
         },
         {
           label: "Erfahrungen",
-          content: ["React, Java, Amazon EC2, S3, IAM, PostgreSQL, MySQL"],
+          content: ["React, Java, AWS EC2, S3, IAM, PostgreSQL, Jenkins"],
         },
       ],
     },
@@ -130,14 +140,14 @@ export const germanData: ResumeData = {
         {
           label: "Tätigkeiten",
           content: [
-            "Issues bearbeiten (Bugfixes, kleine Features)",
-            "Erstellen eiens POC: CI/CD Pipeline in Gitea mit Github Actions",
-            "Manuelles & exploratives Testen und Issues erstellen",
+            "Erstellen eines POC: CI/CD Pipeline in Gitea mit Github Actions",
+            "Manuelles & exploratives Testen von Software",
+            "Bugfixes und Implementierung neuer Features",
           ],
         },
         {
           label: "Technologien",
-          content: ["Angular, Spring Boot (Java), Gitea"],
+          content: ["Angular, Spring Boot, Java, Gitea"],
         },
       ],
     },
@@ -199,7 +209,7 @@ export const germanData: ResumeData = {
         { name: "React", level: "1" },
         { name: "Tailwind CSS", level: "1" },
         { name: "Next.js", level: "2" },
-        { name: "Spring Framework", level: "2" },
+        { name: "Spring Boot", level: "2" },
         { name: "AWS Amplify", level: "3" },
         { name: "Angular", level: "2" },
       ],
@@ -244,22 +254,35 @@ export const germanData: ResumeData = {
     title: "Bewerbung Werkstudent Software Development",
     recipient: {
       name: "Recruiting Team",
-      company: "VT Netzwelt",
+      company: "Auralis Group",
       address: {
-        street: "Zur Innung 19",
-        city: "Berlin",
-        postalCode: "10247",
+        street: "Nördliche Münchner Str. 27a",
+        city: "Grüwald",
+        postalCode: "82031",
       },
     },
     date: getCurrentDate(),
-    greeting: "Liebes VT Netzwelt Recruiting-Team",
+    greeting: "Liebes Auralis Recruiting-Team",
     mainText:
-      "Mit großem Interesse möchte ich mich als Werkstudent bei VT Netzwelt bewerben. Auf LinkedIn bin ich auf eure Stellenausschreibung aufmerksam geworden und hatte beim Lesen sofort das Gefühl, dass diese Position perfekt zu mir passt. Besonders die Beschreibung der Aufgaben und Arbeitsweise hat mich überzeugt – technisch anspruchsvoll, neugierig und mit Fokus auf Qualität – entspricht genau dem, was mich antreibt.\n\n" +
-      "Ich bin Informatikstudent an der HTW Berlin im 5. Semester und bringe mehrere Jahre Praxiserfahrung als Werkstudent mit – unter anderem bei ImmoScout24 und der Deutschen Telekom AG. In beiden Unternehmen war ich Teil agiler Teams und konnte eigenverantwortlich Features von der Anforderung über die Implementierung bis zum Release umsetzen. Besonders geschätzt habe ich dort die offene Kommunikation auf Augenhöhe, das Vertrauen in eigene Ideen und die Möglichkeit, Verantwortung zu übernehmen.\n\n" +
-      "Der Schwerpunkt meiner technischen Kenntnisse liegt im Frontend mit React und Next.js, ergänzt durch solide Kenntnisse in Java und Spring Boot. Ich arbeite also routiniert als Full-Stack-Entwickler und sehe darin einen großen Vorteil, um mich schnell auch in die Mobile App Entwicklung einzuarbeiten. Bisher habe ich noch kein Projekt mit React Native oder Flutter umgesetzt, sehe darin aber eine spannende Gelegenheit, meine bisherigen Erfahrungen gezielt zu erweitern und Neues zu lernen.\n\n" +
-      "Gerade um mich weiterzuentwickeln, möchte ich nicht einfach nur neben dem Studium arbeiten, sondern wirklich etwas bewirken – eigene Ideen einbringen, Verantwortung übernehmen und dabei kontinuierlich dazulernen. Ich bin überzeugt, dass meine Neugier, Lernbereitschaft und praktischen Erfahrungen gut zu VT Netzwelt passen.\n\n" +
-      "Ich werde meinen Bachelorabschluss voraussichtlich im Wintersemester 2026/27 erreichen. Bis dahin bin ich als Student immatrikuliert und flexibel einsetzbar. Sowohl die Position als auch die Arbeitsweise sprechen mich sehr an – und ich kann mir gut vorstellen, nach dem Studium weiterhin Teil eures Teams zu bleiben.\n\n" +
-      "Ich würde mich sehr freuen, meine Motivation und technischen Fähigkeiten in einem persönlichen Gespräch mit euch zu teilen – und vielleicht schon bald gemeinsam an spannenden digitalen Projekten zu arbeiten.",
-    closing: "Mit herzlichen Grüßen",
+      "mit großem Interesse möchte ich mich als Werkstudent bei der Auralis Group bewerben. " +
+      "Auf LinkedIn bin ich auf euer Unternehmen aufmerksam geworden und habe gesehen, dass eine Stellenausschreibung für eine Werkstudentenposition bereits abgelaufen ist. " +
+      "Dennoch hat mich eure About Us- und Careers-Seite sofort begeistert – besonders, wie ihr eure Werte und euren Ansatz zur Entwicklung digitaler Produkte beschreibt. " +
+      "Deshalb möchte ich mich euch kurz vorstellen und meine Motivation teilen, Teil eures Teams zu werden.\n\n" +
+      "Ich studiere derzeit Angewandte Informatik im 5. Semester an der HTW Berlin und arbeite seit Ende 2021 als Werkstudent in der Softwareentwicklung. " +
+      "In dieser Zeit konnte ich umfangreiche Erfahrungen in der Full-Stack-Webentwicklung sammeln.\n\n" +
+      "In meinen bisherigen Positionen war ich Teil agiler Scrum-Teams, in denen ich eigenverantwortlich neue Features entwickelt, getestet und bis zum Release begleitet habe. " +
+      "Ich schätze es sehr, wenn mir Aufgaben anvertraut werden, bei denen ich Neues lernen oder mich selbstständig in komplexe Codebasen einarbeiten kann. " +
+      "Dieses Vertrauen und die damit verbundene Verantwortung motivieren mich, mich als Entwickler stetig weiterzuentwickeln.\n\n" +
+      "Bei ImmoScout24 habe ich besonders den starken Teamzusammenhalt und die offene Kommunikation geschätzt. " +
+      "Von Beginn an fühlte ich mich willkommen – auf meine Kolleg:innen zählen zu können, Fragen zu stellen und gemeinsam im Pair Programming zu arbeiten, " +
+      "hat die Arbeit für mich besonders angenehm und inspirierend gemacht.\n\n" +
+      "Da mein Zweijahresvertrag dort abgelaufen ist, suche ich nun nach einer neuen Herausforderung, bei der ich weiter lernen, eigene Ideen einbringen und gemeinsam mit einem engagierten Team wachsen kann. " +
+      "Besonders wichtig ist mir ein Umfeld, das Neugier, Qualität und durchdachtes Problemlösen fördert – und genau diesen Eindruck habe ich von Auralis gewonnen.\n\n" +
+      "Ich bin überzeugt, dass meine technischen Fähigkeiten, meine Lernbereitschaft und meine Motivation gut zu euch passen. " +
+      "Meinen Bachelorabschluss werde ich voraussichtlich Anfang 2027 abschließen und ich kann mir sehr gut vorstellen, auch darüber hinaus Teil eures Unternehmens zu bleiben.\n\n" +
+      "Ich würde mich sehr freuen, meine Motivation und bisherigen Erfahrungen in einem persönlichen Gespräch mit euch zu teilen – " +
+      "und vielleicht schon bald gemeinsam an spannenden Softwareprojekten zu arbeiten.\n\n" +
+      "Im Anhang findet ihr außerdem zwei Beispielprojekte, die ich entwickelt habe, jeweils mit einer kurzen Beschreibung.",
+    closing: "Mit freundlichen Grüßen",
   },
 };

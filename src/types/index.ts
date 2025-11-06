@@ -3,17 +3,24 @@ export interface DetailItem {
   content: string[];
 }
 
+export type ExperienceType = "education" | "experience";
+
 export interface TimelineEntry {
-  type: 'education' | 'experience';
+  type: ExperienceType;
   title: string;
   institution: string;
   period: string;
   details: DetailItem[];
 }
 
+export interface TimelineCategory {
+  type: ExperienceType;
+  label: string;
+}
+
 export interface SkillItem {
   name: string;
-  level: '1' | '2' | '3';
+  level: "1" | "2" | "3";
 }
 
 export interface Skill {
@@ -39,7 +46,7 @@ export interface Language {
 }
 
 export interface SkillLevel {
-  level: '1' | '2' | '3';
+  level: "1" | "2" | "3";
   label: string;
   description: string;
 }
@@ -55,6 +62,7 @@ export interface ResumeData {
   contact: Contact;
   languages: Language[];
   skillLevels: SkillLevel[];
+  timelineCategories: TimelineCategory[];
   timeline: TimelineEntry[];
   hardSkills: Skill[];
   coverLetter: {
@@ -73,4 +81,4 @@ export interface ResumeData {
     mainText: string;
     closing: string;
   };
-} 
+}

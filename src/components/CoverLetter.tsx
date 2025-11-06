@@ -62,19 +62,21 @@ const CoverLetter: React.FC = () => {
             <Box>
               <Box sx={{ mt: 4, mb: 4 }}>
                 <Typography variant="body1">
-                  {coverLetter.recipient.company.split('\n').map((line, i) => (
+                  {coverLetter.recipient.company.split("\n").map((line, i) => (
                     <span key={i}>
                       {line}
-                      {i < coverLetter.recipient.company.split('\n').length - 1 && <br />}
+                      {i <
+                        coverLetter.recipient.company.split("\n").length -
+                          1 && <br />}
                     </span>
                   ))}
                   <br />
                   {coverLetter.recipient.name}
                   <br />
-                  {coverLetter.recipient.address.street}
+                  {coverLetter.recipient.address?.street}
                   <br />
-                  {coverLetter.recipient.address.postalCode}{" "}
-                  {coverLetter.recipient.address.city}
+                  {coverLetter.recipient.address?.postalCode}{" "}
+                  {coverLetter.recipient.address?.city}
                 </Typography>
               </Box>
             </Box>
@@ -82,7 +84,10 @@ const CoverLetter: React.FC = () => {
             <Box sx={{ textAlign: "left", minWidth: 220, borderRadius: 2 }}>
               <Stack spacing={1} sx={{ mt: 2 }}>
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 600, fontSize: "1.1rem" }}>
+                  <Typography
+                    variant="body2"
+                    sx={{ fontWeight: 600, fontSize: "1.1rem" }}
+                  >
                     {resumeData.name}
                   </Typography>
                 </Box>
@@ -159,10 +164,10 @@ const CoverLetter: React.FC = () => {
             paragraph
             sx={{ color: "rgba(0,0,0,0.87)", mb: 5 }}
           >
-            {coverLetter.mainText.split('\n').map((line, i) => (
+            {coverLetter.mainText.split("\n").map((line, i) => (
               <span key={i}>
                 {line}
-                {i < coverLetter.mainText.split('\n').length - 1 && <br />}
+                {i < coverLetter.mainText.split("\n").length - 1 && <br />}
               </span>
             ))}
           </Typography>
@@ -171,7 +176,7 @@ const CoverLetter: React.FC = () => {
           <Typography variant="body1" sx={{ color: "rgba(0,0,0,0.87)" }}>
             {coverLetter.closing},
           </Typography>
-          <Box sx={{ height: 60 }} />
+          <Box sx={{ height: 10 }} />
           <Typography variant="body1" sx={{ color: "rgba(0,0,0,0.87)" }}>
             {resumeData.name}
           </Typography>

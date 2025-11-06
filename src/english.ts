@@ -15,7 +15,7 @@ export const englishData: ResumeData = {
   name: "Felix Heinrich",
   title: "Student & Full Stack Software Developer",
   summary:
-    "Motivated Computer Science student (graduation summer 2026) with over 2 years of practical experience as a Full Stack Developer at ImmoScout24 and Deutsche Telekom. Specialized in modern web technologies (React, TypeScript, Java) and cloud solutions (AWS, Docker, CI/CD).",
+    "Motivated Computer Science student (graduation winter 2026/27) with over 2 years of practical experience as a Full Stack Developer at ImmoScout24 and Deutsche Telekom. Specialized in modern web technologies (React, TypeScript, Java) and cloud solutions (AWS, Docker, CI/CD).",
   contact: {
     email: {
       label: "heinrichfelix03@gmail.com",
@@ -60,6 +60,16 @@ export const englishData: ResumeData = {
       description: "Occasional use",
     },
   ],
+  timelineCategories: [
+    {
+      type: "experience",
+      label: "Work Experience",
+    },
+    {
+      type: "education",
+      label: "Education",
+    },
+  ],
   timeline: [
     {
       type: "experience",
@@ -87,7 +97,7 @@ export const englishData: ResumeData = {
           content: ["Project Planning and Agile Team Work"],
         },
         {
-          label: "Experience",
+          label: "Tech Stack",
           content: ["Angular, Spring Boot, Python, Kotlin, Android Studio"],
         },
       ],
@@ -101,8 +111,8 @@ export const englishData: ResumeData = {
         {
           label: "Responsibilities",
           content: [
-            "Frontend and Backend Development in multiple projects",
-            "Working in Scrum team with regular sprints",
+            "Frontend and Backend development in different projects",
+            "Working in scrum team with regular sprints",
             "Independent feature implementation",
             "Self-managed from implementation to release",
           ],
@@ -117,24 +127,28 @@ export const englishData: ResumeData = {
           ],
         },
         {
-          label: "Experience",
+          label: "Tech Stach",
           content: ["React, Java, Amazon EC2, S3, IAM, PostgreSQL, MySQL"],
         },
       ],
     },
     {
-      type: "education",
-      title: "High School Diploma",
-      institution: "Gymnasium",
-      period: "2019 – 2021",
+      type: "experience",
+      title: "Working Student - Software Developer",
+      institution: "Systementwicklung für Raumbezogene Planung GmbH",
+      period: "September 2025 – today",
       details: [
         {
-          label: "Grade Average",
-          content: ["1.7"],
+          label: "Responsibilities",
+          content: [
+            "Create POC: CI/CD pipeline in Gitea with Github Actions",
+            "Manual testing of software",
+            "Fix bugs and implement new features",
+          ],
         },
         {
-          label: "Advanced Courses",
-          content: ["Mathematics and Computer Science"],
+          label: "Tech Stack",
+          content: ["Angular, Spring Boot, Java, Gitea"],
         },
       ],
     },
@@ -159,7 +173,7 @@ export const englishData: ResumeData = {
     {
       type: "education",
       title:
-        "B.Sc. Applied Computer Science (Expected Graduation: Summer Semester 2026)",
+        "B.Sc. Applied Computer Science (Expected Graduation: Winter Semester 2026/27)",
       institution: "HTW Berlin",
       period: "October 2023 – Present",
       details: [
@@ -186,7 +200,7 @@ export const englishData: ResumeData = {
         { name: "Java", level: "1" },
         { name: "HTML", level: "1" },
         { name: "CSS", level: "1" },
-        { name: "Scala", level: "3" },
+        { name: "Scala", level: "2" },
         { name: "Go", level: "3" },
       ],
     },
@@ -194,11 +208,11 @@ export const englishData: ResumeData = {
       category: "Frameworks & Libraries",
       items: [
         { name: "React", level: "1" },
-        { name: "Tailwind CSS", level: "2" },
+        { name: "Tailwind CSS", level: "1" },
         { name: "Next.js", level: "2" },
-        { name: "Spring Framework", level: "2" },
+        { name: "Spring Boot", level: "2" },
         { name: "AWS Amplify", level: "3" },
-        { name: "Angular", level: "3" },
+        { name: "Angular", level: "2" },
       ],
     },
     {
@@ -213,18 +227,18 @@ export const englishData: ResumeData = {
       ],
     },
     {
-      category: "Databases",
+      category: "Data Bases",
       items: [
         { name: "PostgreSQL", level: "2" },
-        { name: "MySQL", level: "3" },
+        { name: "MySQL", level: "2" },
       ],
     },
     {
       category: "Tools & Version Control",
       items: [
         { name: "Git", level: "1" },
-        { name: "GitHub", level: "1" },
         { name: "AI Tools", level: "1" },
+        { name: "Figma", level: "2" },
       ],
     },
     {
@@ -240,19 +254,36 @@ export const englishData: ResumeData = {
   coverLetter: {
     title: "Application Working Student Software Development",
     recipient: {
-      name: "VT Netzwelt Recruiting Team",
-      company: "VT Netzwelt",
+      name: "Recruiting Team",
+      company: "Auralis Group",
       address: {
-        street: "Zur Innung 19",
-        city: "Berlin",
-        postalCode: "10247",
+        street: "Nördliche Münchner Str. 27a",
+        city: "Grüwald",
+        postalCode: "82031",
       },
     },
     date: getCurrentDate(),
-    greeting: "Dear SRP Team",
+    greeting: "Dear Auralis Recruiting Team",
     mainText:
-      "I am writing to express my strong interest in applying for the working student position at SRP GmbH. Through my fellow student Nikolaus Häger, I learned that you are looking for goal-oriented working students who can support your team. With my 3 years of professional experience and upcoming graduation, I am convinced that I can be a valuable addition to your team.\n\nAs a computer science student at HTW Berlin with experience at renowned companies such as ImmoScout24 and Deutsche Telekom AG, I bring solid practical knowledge. My expertise includes full-stack development with frontend frameworks like React and Next.js, as well as Spring and Java in the backend. I have experience with cloud services such as AWS, Datadog, and Optimizely, and can independently handle tasks in projects from implementation to release.\n\nMy goal is to systematically develop my existing technical skills and prepare myself for a career as a mid-level developer. As your working student, I can gain further practical experience, familiarize myself with new technologies and workflows, and thus lay the foundations for my professional career after graduation. I would like to work together with experienced team members to expand my competencies and contribute to the company's success.\n\nMy Bachelor's degree in Applied Computer Science is expected to be completed in the summer semester of 2026. I am enrolled as a student until September 30, 2026, and am flexible for a working student position. Thanks to my comprehensive practical experience, I can independently familiarize myself with new technologies and tasks, so that I can integrate productively into your workflows from the very beginning.\n\nI look forward to contributing my skills at SRP GmbH and developing innovative software solutions together. I would be happy to present my motivation and technical competencies in more detail in a personal interview.",
+      "With great interest, I would like to apply for a Working Student position at Auralis Group. " +
+      "I first came across your company on LinkedIn, where I noticed a recent working student job posting that had already expired. " +
+      "Still, after reading through your About Us and Careers pages, I got really excited about the way you describe your values and approach to building digital products. " +
+      "That’s why I’d love to introduce myself and express my motivation to join your team.\n\n" +
+      "I’m currently studying Applied Computer Science in my 5th semester at HTW Berlin and have been working as a software developer in different working student positions since the end of 2021. " +
+      "During this time, I’ve gained solid experience in full-stack web development.\n\n" +
+      "In both of my previous roles, I was part of agile Scrum teams where I developed, tested, and released new features independently. " +
+      "I enjoy being trusted with tasks that require me to explore new technologies or dig into complex codebases on my own. " +
+      "That kind of responsibility and freedom is exactly what keeps me motivated to learn and improve every day as a developer.\n\n" +
+      "At ImmoScout24, I especially appreciated the team spirit and open communication. " +
+      "From day one, I felt welcomed and supported — being able to rely on my teammates, ask for help, and pair program together made me feel like part of a small family rather than just coworkers. " +
+      "That experience shaped the way I think about good teamwork and a healthy engineering culture.\n\n" +
+      "Since my two-year contract there ended, I’ve been looking for a new opportunity where I can keep learning, contribute my own ideas, and grow together with the team. " +
+      "I’m particularly interested in joining a company that values curiosity, high-quality work, and thoughtful problem-solving — and from everything I’ve seen, Auralis seems to be exactly that kind of place.\n\n" +
+      "I’m confident that my technical skills, curiosity, and motivation to grow fit well with your team. " +
+      "I expect to complete my Bachelor’s degree in early 2027 and would love to continue being part of your company beyond my studies.\n\n" +
+      "I’d be happy to share more about my motivation and experience in a personal conversation — " +
+      "and hopefully work together soon on creating great software that makes a real difference.\n\n" +
+      "Attached, you’ll find two example projects I’ve developed, along with a short description of each.",
     closing: "Kind regards",
   },
 };
-

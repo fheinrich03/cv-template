@@ -1,15 +1,18 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { TimelineEntry, DetailItem } from "../types/index";
+import { TimelineEntry, DetailItem, TimelineCategory } from "../types/index";
 import telekomLogo from "../assets/telekom.png";
 import immoscoutLogo from "../assets/immoscout24.png";
+import { useLanguage } from "../context/LanguageContext";
 
 interface TimelineProps {
   entries: TimelineEntry[];
+  label: string;
 }
 
-const Timeline: React.FC<TimelineProps> = ({ entries }) => {
+const Timeline: React.FC<TimelineProps> = ({ entries, label }) => {
   const reversedEntries = [...entries].reverse();
+  const { language } = useLanguage();
   const getCompanyLogo = (institution: string): string | undefined => {
     switch (institution.toLowerCase()) {
       case "deutsche telekom ag":
@@ -34,9 +37,7 @@ const Timeline: React.FC<TimelineProps> = ({ entries }) => {
           fontSize: "1.1rem",
         }}
       >
-        {reversedEntries[0]?.type === "education"
-          ? "Bildungsweg"
-          : "Berufserfahrung"}
+        {label}
       </Typography>
       {reversedEntries.map((entry, index) => (
         <Box key={index} sx={{ mb: 2 }}>
