@@ -12,35 +12,35 @@ const getCurrentDate = () => {
 };
 
 export const germanData: ResumeData = {
-  name: "Felix Heinrich",
-  title: "Student & Fullstack-Softwareentwickler",
+  name: "Mohammad Yasin Ahmadzada",
+  title: "Informatikabsolvent – Ausbildung Fachinformatiker Anwendungsentwicklung",
   summary:
-    "Motivierter Informatikstudent (Abschluss Wintersemester 2026/27) mit über 4 Jahren praktischer Erfahrung als Fullstack-Entwickler bei ImmoScout24 und der Deutschen Telekom. Spezialisiert auf moderne Webtechnologien (React, TypeScript, Java) und Cloud-Lösungen (AWS, Docker, CI/CD).",
+    "Motivierter Informatikabsolvent mit analytischem Denkvermögen und großer Begeisterung für Softwareentwicklung. "
+    + "Während meiner Integration in Deutschland habe ich gezielt Sprachkenntnisse aufgebaut und vielseitige praktische Erfahrungen gesammelt. "
+    + "Nun strebe ich eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung an, um meine technischen Fähigkeiten praxisnah weiterzuentwickeln.",
   contact: {
     email: {
-      label: "heinrichfelix03@gmail.com",
+      label: "yasinkhanbehroz786@gmail.com",
     },
     phone: {
-      label: "+49 1729723090",
+      label: "017663470038",
     },
     location: {
-      label: "Bernau bei Berlin, Deutschland",
-    },
-    linkedin: {
-      label: "felix-heinrich-b2b66b26b",
-    },
-    github: {
-      label: "fheinrich03",
+      label: "Merkurstraße 19, 16321 Bernau",
     },
   },
   languages: [
     {
-      name: "Deutsch",
+      name: "Dari",
       level: "Muttersprache",
     },
     {
+      name: "Deutsch",
+      level: "C1",
+    },
+    {
       name: "Englisch",
-      level: "C1 – fließend",
+      level: "C1",
     },
   ],
   skillLevels: [
@@ -73,216 +73,124 @@ export const germanData: ResumeData = {
   timeline: [
     {
       type: "experience",
-      title: "Duales Studium bei der Deutschen Telekom AG",
-      institution: "Deutsche Telekom AG",
-      period: "Oktober 2021 – September 2023",
+      title: "IT Officer",
+      institution: "Milad Farhat Logistic Services",
+      period: "2020 – 2021",
       details: [
         {
-          label: "Einsatzort",
-          content: ["IT und T-Labs"],
-        },
-        {
-          label: "Projekte",
-          content: [
-            "Kahoot-Klon, Quantum Secure Communication (Open VPN)",
-            "Kubernetes, Docker, CI/CD",
-          ],
-        },
-        {
           label: "Tätigkeiten",
-          content: ["Frontend- und Backend-Entwicklung, Python-Scripts"],
-        },
-        {
-          label: "Arbeitsweise",
-          content: ["Projektplanung und agiles Arbeiten im Team"],
-        },
-        {
-          label: "Erfahrungen",
-          content: ["Angular, Spring Boot, Python, Kotlin, Android Studio"],
+          content: [
+            "Verwaltung und Wartung der IT-Systeme",
+            "Installation und Konfiguration von Hard- und Software",
+            "Netzwerk- und VPN-Konfiguration",
+            "Sicherstellung der Datensicherheit und Systemstabilität",
+            "Optimierung der Systemleistung",
+          ],
         },
       ],
     },
     {
       type: "experience",
-      title: "Werkstudent Softwareentwickler (Webentwicklung, Full Stack)",
-      institution: "ImmoScout24",
-      period: "November 2023 – August 2025",
+      title: "Logistikmitarbeiter",
+      institution: "Outlet Home24, Berlin",
+      period: "11.06.2024 – 01.12.2024",
       details: [
         {
           label: "Tätigkeiten",
           content: [
-            "Frontend- und Backend-Entwicklung in mehreren Projekten",
-            "Arbeit im Scrum-Team mit regelmäßigen Sprints",
-            "Selbständige Entwicklung von Features von Implementierung bis Release",
+            "Warenannahme und Qualitätskontrolle",
+            "Lagerorganisation und Bestandsprüfung",
+            "Unterstützung effizienter Teamabläufe",
           ],
-        },
-        {
-          label: "Arbeitsweise",
-          content: [
-            "Implementierung",
-            "Testen und Qualitätssicherung",
-            "UAT (User Acceptance Testing)",
-            "Release-Management",
-          ],
-        },
-        {
-          label: "Erfahrungen",
-          content: ["React, Java, AWS EC2, S3, IAM, PostgreSQL, Jenkins"],
         },
       ],
     },
     {
       type: "experience",
-      title: "Werkstudent Softwarenentwickler bei SRP",
-      institution: "Systementwicklung für Raumbezogene Planung GmbH",
-      period: "September 2025 – heute",
+      title: "Logistikmitarbeiter",
+      institution: "Versand/Logistik",
+      period: "06.03.2025 – 14.02.2026",
       details: [
         {
           label: "Tätigkeiten",
           content: [
-            "Erstellen eines POC: CI/CD Pipeline in Gitea mit Github Actions",
-            "Manuelles & exploratives Testen von Software",
-            "Bugfixes und Implementierung neuer Features",
-          ],
-        },
-        {
-          label: "Technologien",
-          content: ["Angular, Spring Boot, Java, Gitea"],
-        },
-      ],
-    },
-    {
-      type: "education",
-      title:
-        "B.Sc. Informations- und Kommunikationstechnik (Wechsel nach 4. Semester)",
-      institution: "HTWK Leipzig",
-      period: "Oktober 2021 – September 2023",
-      details: [
-        {
-          label: "Relevante Module",
-          content: [
-            "Projekt 1",
-            "Programmierung 1 & 2 (Java, C)",
-            "Technische Informatik",
-            "Informations- und Codierungstheorie",
+            "Scannen und Sortieren von Sendungen",
+            "Sicherstellung korrekter Versandprozesse",
+            "Präzises Arbeiten unter Zeitdruck",
           ],
         },
       ],
     },
     {
       type: "education",
-      title:
-        "B.Sc. Angewandte Informatik (voraussichtlicher Abschluss: Wintersemester 2026/27)",
-      institution: "HTW Berlin",
-      period: "Oktober 2023 – Heute",
-      details: [
-        {
-          label: "Relevante Module",
-          content: [
-            "Software Engineering (Python)",
-            "Programmierung (Java)",
-            "Datenbanken",
-            "Web Application Development (HTML, CSS, JavaScript)",
-            "Algorithmen und Datenstrukturen (Go)",
-          ],
-        },
-      ],
+      title: "B.Sc. Informationswissenschaft und Ingenieurwesen",
+      institution: "Kabul University",
+      period: "2017 – 2021",
+      details: [],
+    },
+    {
+      type: "education",
+      title: "Sekundarschulabschluss",
+      institution: "Ustad-Sharifi-Gymnasium, Afghanistan",
+      period: "2015",
+      details: [],
     },
   ],
   hardSkills: [
     {
       category: "Programmiersprachen",
       items: [
-        { name: "Python", level: "2" },
-        { name: "Kotlin", level: "3" },
-        { name: "TypeScript", level: "1" },
-        { name: "Java", level: "1" },
-        { name: "HTML", level: "1" },
-        { name: "CSS", level: "1" },
-        { name: "Scala", level: "2" },
-        { name: "Go", level: "3" },
+        { name: "C++", level: "2" },
+        { name: "Java", level: "2" },
+        { name: "JavaScript", level: "2" },
+        { name: "C#", level: "2" },
+        { name: "HTML", level: "2" },
+        { name: "CSS", level: "2" },
+        { name: "PHP", level: "2" },
       ],
     },
     {
-      category: "Frameworks & Libraries",
+      category: "Webentwicklung",
       items: [
-        { name: "React", level: "1" },
-        { name: "Tailwind CSS", level: "1" },
-        { name: "Next.js", level: "2" },
-        { name: "Spring Boot", level: "2" },
-        { name: "AWS Amplify", level: "3" },
-        { name: "Angular", level: "2" },
+        { name: "Entwicklung dynamischer Webseiten", level: "3" },
       ],
     },
     {
-      category: "DevOps & Infrastruktur",
+      category: "Systeme & Datenbanken",
       items: [
-        { name: "Docker", level: "2" },
-        { name: "CI/CD", level: "2" },
-        { name: "Amazon EC2", level: "3" },
-        { name: "Amazon S3", level: "3" },
-        { name: "Amazon IAM", level: "3" },
-        { name: "Amazon Systems Manager", level: "3" },
-      ],
-    },
-    {
-      category: "Datenbanken",
-      items: [
-        { name: "PostgreSQL", level: "2" },
+        { name: "Linux", level: "2" },
+        { name: "SQL Server", level: "2" },
         { name: "MySQL", level: "2" },
       ],
     },
     {
-      category: "Tools & Versionskontrolle",
+      category: "Netzwerk & IT-Systeme",
       items: [
-        { name: "Git", level: "1" },
-        { name: "AI Tools", level: "1" },
-        { name: "Figma", level: "2" },
-      ],
-    },
-    {
-      category: "Testing",
-      items: [
-        { name: "Jest", level: "1" },
-        { name: "Cypress", level: "2" },
-        { name: "JUnit, Mockito", level: "1" },
-        { name: "Playwright", level: "2" },
+        { name: "Installation und Konfiguration von IT-Systemen", level: "2" },
+        { name: "Netzwerk- und VPN-Einrichtung", level: "2" },
       ],
     },
   ],
   coverLetter: {
-    title: "Bewerbung Werkstudent Software Development",
+    title: "Bewerbung – Ausbildung Fachinformatiker Anwendungsentwicklung",
     recipient: {
-      name: "Recruiting Team",
-      company: "Auralis Group",
+      name: "Personalabteilung",
+      company: "Firmenname GmbH",
       address: {
-        street: "Nördliche Münchner Str. 27a",
-        city: "Grüwald",
-        postalCode: "82031",
+        street: "Musterstraße 1",
+        city: "Berlin",
+        postalCode: "10115",
       },
     },
     date: getCurrentDate(),
-    greeting: "Liebes Auralis Recruiting-Team",
+    greeting: "Sehr geehrte Damen und Herren,",
     mainText:
-      "mit großem Interesse möchte ich mich als Werkstudent bei der Auralis Group bewerben. " +
-      "Auf LinkedIn bin ich auf euer Unternehmen aufmerksam geworden und habe gesehen, dass eine Stellenausschreibung für eine Werkstudentenposition bereits abgelaufen ist. " +
-      "Dennoch hat mich eure About Us- und Careers-Seite sofort begeistert – besonders, wie ihr eure Werte und euren Ansatz zur Entwicklung digitaler Produkte beschreibt. " +
-      "Deshalb möchte ich mich euch kurz vorstellen und meine Motivation teilen, Teil eures Teams zu werden.\n\n" +
-      "Ich studiere derzeit Angewandte Informatik im 5. Semester an der HTW Berlin und arbeite seit Ende 2021 als Werkstudent in der Softwareentwicklung. " +
-      "In dieser Zeit konnte ich umfangreiche Erfahrungen in der Full-Stack-Webentwicklung sammeln.\n\n" +
-      "In meinen bisherigen Positionen war ich Teil agiler Scrum-Teams, in denen ich eigenverantwortlich neue Features entwickelt, getestet und bis zum Release begleitet habe. " +
-      "Ich schätze es sehr, wenn mir Aufgaben anvertraut werden, bei denen ich Neues lernen oder mich selbstständig in komplexe Codebasen einarbeiten kann. " +
-      "Dieses Vertrauen und die damit verbundene Verantwortung motivieren mich, mich als Entwickler stetig weiterzuentwickeln.\n\n" +
-      "Bei ImmoScout24 habe ich besonders den starken Teamzusammenhalt und die offene Kommunikation geschätzt. " +
-      "Von Beginn an fühlte ich mich willkommen – auf meine Kolleg:innen zählen zu können, Fragen zu stellen und gemeinsam im Pair Programming zu arbeiten, " +
-      "hat die Arbeit für mich besonders angenehm und inspirierend gemacht.\n\n" +
-      "Da mein Zweijahresvertrag dort abgelaufen ist, suche ich nun nach einer neuen Herausforderung, bei der ich weiter lernen, eigene Ideen einbringen und gemeinsam mit einem engagierten Team wachsen kann. " +
-      "Besonders wichtig ist mir ein Umfeld, das Neugier, Qualität und durchdachtes Problemlösen fördert – und genau diesen Eindruck habe ich von Auralis gewonnen.\n\n" +
-      "Ich bin überzeugt, dass meine technischen Fähigkeiten, meine Lernbereitschaft und meine Motivation gut zu euch passen. " +
-      "Meinen Bachelorabschluss werde ich voraussichtlich Anfang 2027 abschließen und ich kann mir sehr gut vorstellen, auch darüber hinaus Teil eures Unternehmens zu bleiben.\n\n" +
-      "Ich würde mich sehr freuen, meine Motivation und bisherigen Erfahrungen in einem persönlichen Gespräch mit euch zu teilen – " +
-      "und vielleicht schon bald gemeinsam an spannenden Softwareprojekten zu arbeiten.\n\n" +
-      "Im Anhang findet ihr außerdem zwei Beispielprojekte, die ich entwickelt habe, jeweils mit einer kurzen Beschreibung.",
+      "mit großem Interesse bewerbe ich mich bei Ihnen um eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung.\n\n"
+      + "Als motivierter Informatikabsolvent (B.Sc. Informationswissenschaft und Ingenieurwesen, Kabul University) bringe ich analytisches Denkvermögen und Begeisterung für Softwareentwicklung mit. "
+      + "Während meiner Integration in Deutschland habe ich gezielt Sprachkenntnisse (Deutsch und Englisch C1) aufgebaut und vielseitige praktische Erfahrungen gesammelt.\n\n"
+      + "Als IT Officer bei Milad Farhat Logistic Services habe ich IT-Systeme verwaltet und gewartet, Hard- und Software installiert und konfiguriert sowie Netzwerke und VPN eingerichtet. "
+      + "Meine technischen Kenntnisse umfassen Programmiersprachen (C++, Java, JavaScript, C#, PHP), Webentwicklung, Linux, SQL Server und MySQL.\n\n"
+      + "Ich strebe eine Ausbildung an, um meine Fähigkeiten praxisnah weiterzuentwickeln und freue mich auf die Gelegenheit, Sie in einem persönlichen Gespräch von meiner Motivation zu überzeugen.",
     closing: "Mit freundlichen Grüßen",
   },
 };
