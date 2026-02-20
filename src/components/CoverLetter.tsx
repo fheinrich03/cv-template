@@ -8,6 +8,7 @@ import {
   GitHub,
 } from "@mui/icons-material";
 import { useLanguage } from "../context/LanguageContext";
+import InlineMarkdown from "./InlineMarkdown";
 
 const CoverLetter: React.FC = () => {
   const { resumeData } = useLanguage();
@@ -166,7 +167,7 @@ const CoverLetter: React.FC = () => {
           >
             {coverLetter.mainText.split("\n").map((line, i) => (
               <span key={i}>
-                {line}
+                <InlineMarkdown text={line} />
                 {i < coverLetter.mainText.split("\n").length - 1 && <br />}
               </span>
             ))}
