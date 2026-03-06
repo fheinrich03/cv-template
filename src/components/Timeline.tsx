@@ -34,7 +34,9 @@ const Timeline: React.FC<TimelineProps> = ({ entries }) => {
           fontSize: "1.1rem",
         }}
       >
-        {reversedEntries[0]?.type === "education" ? "Bildungsweg" : "Berufserfahrung"}
+        {reversedEntries[0]?.type === "education"
+          ? "Bildungsweg"
+          : "Berufserfahrung"}
       </Typography>
       {reversedEntries.map((entry, index) => (
         <Box key={index} sx={{ mb: 2 }}>
@@ -88,7 +90,7 @@ const Timeline: React.FC<TimelineProps> = ({ entries }) => {
               <Box key={idx} sx={{ display: "flex", mb: 0.5 }}>
                 <Box
                   sx={{
-                    width: "150px",
+                    width: "170px",
                     fontWeight: "bold",
                     fontSize: "0.9rem",
                     color: "rgba(0, 0, 0, 0.6)",
@@ -106,7 +108,7 @@ const Timeline: React.FC<TimelineProps> = ({ entries }) => {
                   }}
                 >
                   {detail.content.map((item, itemIdx) => (
-                    <Box key={itemIdx} sx={{ mb: 0.5}}>
+                    <Box key={itemIdx} sx={{ mb: 0.5 }}>
                       {item}
                     </Box>
                   ))}
