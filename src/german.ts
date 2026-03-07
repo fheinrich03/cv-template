@@ -15,7 +15,7 @@ export const germanData: ResumeData = {
   name: "Yazan Bouadakji",
   title: "Student & Webentwickler",
   summary:
-    "Engagierter Medieninformatik-Student an der BHT mit praktischer Erfahrung in der Webentwicklung bei der Deutschen Telekom AG. Spezialisiert auf Frontend-Technologien (HTML, CSS, TypeScript, Java).",
+    "Engagierter Medieninformatik-Student an der BHT mit praktischer Erfahrung in der Webentwicklung bei der Deutschen Telekom AG. Spezialisiert auf moderne Frontend-Technologien (React, Next.js, Typescript, Tailwind CSS).",
   contact: {
     email: {
       label: "yazanbawa262@gmail.com",
@@ -67,8 +67,8 @@ export const germanData: ResumeData = {
   timeline: [
     {
       type: "experience",
-      title: "Privates Projekt: CRM für Anwaltskanzlei",
-      institution: "Eigenentwicklung (in Produktion)",
+      title: "Privates Projekt: CRM-System für Anwaltskanzlei",
+      institution: "Eigene Projekte",
       period: "Sep 2023 – heute (ca. 1 Jahr 6 Monate)",
       details: [
         {
@@ -79,13 +79,25 @@ export const germanData: ResumeData = {
         },
         {
           label: "Status",
-          content: ["In Production – wird von der Kanzlei aktiv genutzt"],
+          content: ["In Produktion – wird von der Kanzlei aktiv genutzt"],
         },
         {
           label: "Tätigkeiten",
           content: [
-            "Konzeption und Entwicklung eines maßgeschneiderten CRM",
-            "Einsatz in der Praxis durch die Anwaltskanzlei",
+            "Einrichtung von Netzwerk und Server vor Ort",
+            "NAS Einrichtung & automatisierte und verschlüsselte Daten Backups",
+            "Migration von Prozessen: Manuell & analog zu automatisiert & digital",
+            "Konzeption und Entwicklung eines maßgeschneiderten CRM-Systems",
+            "Projektmanagement und Planung im Team",
+            "Support & Bereitstellung von Lösungen bei akuten Anforderungen in der Anwaltskanzlei",
+          ],
+        },
+        {
+          label: "Erfahrungen",
+          content: [
+            "Unterstützte Entwicklung mit KI",
+            "Next.js, TypeScript, Tailwind CSS",
+            "Ticket-System (Linear), CI/CD, Self Hosting, DB Management",
           ],
         },
       ],
@@ -103,16 +115,15 @@ export const germanData: ResumeData = {
         {
           label: "Projekte",
           content: [
-            "Web-Onboarding-Feature für interne Webseite",
+            "Frontend-Entwicklung für interne Webseite",
             "Excel-Automatisierung für Geschäftsentwicklung",
           ],
         },
         {
           label: "Tätigkeiten",
           content: [
-            "Entwicklung komplexer VBA-Formeln und Prozessautomatisierung",
-            "Frontend-Entwicklung für interne Webseite",
-            "Programmierung eines Web-Onboarding-Features",
+            "Entwicklung komplexer VBA-Skripte und Prozessautomatisierung",
+            "Entwicklung eines Onboarding-Features (Frontend)",
             "Erstellung nutzerfreundlicher Oberflächen",
             "VBA-Programmierung",
           ],
@@ -127,27 +138,6 @@ export const germanData: ResumeData = {
         {
           label: "Erfahrungen",
           content: ["HTML, CSS, JavaScript, TypeScript, VBA, Excel"],
-        },
-      ],
-    },
-
-    {
-      type: "education",
-      title: "Abitur, Allgemeine Hochschulreife",
-      institution: "Einstein-Gymnasium Neuenhagen",
-      period: "2017 – 2021",
-      details: [
-        {
-          label: "Notendurchschnitt",
-          content: ["3,0"],
-        },
-        {
-          label: "Informatik Grundkurs",
-          content: ["2,3"],
-        },
-        {
-          label: "Leistungskurse",
-          content: ["Mathematik und Physik"],
         },
       ],
     },
@@ -211,6 +201,7 @@ export const germanData: ResumeData = {
         { name: "Angular", level: "3" },
         { name: "Tailwind CSS", level: "2" },
         { name: "Material-UI", level: "2" },
+        { name: "shadcn-ui", level: "1" },
         { name: "Sass/SCSS", level: "2" },
       ],
     },
@@ -218,7 +209,9 @@ export const germanData: ResumeData = {
       category: "DevOps & Infrastruktur",
       items: [
         { name: "Docker", level: "1" },
+        { name: "Dokploy (Self Hosted)", level: "2" },
         { name: "REST APIs", level: "1" },
+        { name: "Linear", level: "2" },
       ],
     },
     {
@@ -252,7 +245,7 @@ export const germanData: ResumeData = {
   coverLetter: {
     title: "Bewerbung als Werkstudent Softwareentwicklung",
     recipient: {
-      name: "HR Team / Recruiting",
+      name: "HR / Recruiting Team",
       company: "itestra GmbH",
       address: {
         street: "Greifswalder Straße 226",
@@ -261,9 +254,9 @@ export const germanData: ResumeData = {
       },
     },
     date: getCurrentDate(),
-    greeting: "Sehr geehrte Damen und Herren",
+    greeting: "Liebes itestra Recruiting Team",
     mainText:
-      "Ich bin ehrlich gesagt durch einen Zufall auf itestra aufmerksam geworden: Ich habe jemanden mit einem Ihrer Firmen-Shirts gesehen, auf dem ein treffender Spruch über Code stand. Das hat mich neugierig gemacht. Bei meiner anschließenden Recherche hat mich sofort begeistert, dass Sie sich auf Individualsoftware spezialisieren – denn genau das ist mein Ding.\n\nMich reizt an der Softwareentwicklung am meisten, echte und greifbare Probleme zu lösen. Als ich vor einiger Zeit bei einem befreundeten Anwalt in der Kanzlei war, fiel mir auf, dass dort fast 90 % der Aufgaben manuell und ohne vernünftiges System abgewickelt wurden. Ich wusste, dass ich das effizienter gestalten kann und habe ein maßgeschneidertes CRM-System als Fullstack-App mit Next.js und PostgreSQL entwickelt. Das System ist mittlerweile fest im Kanzleialltag integriert, übernimmt die vorher manuellen Prozesse und wird von mir stetig weiterentwickelt.\n\nNeben dieser Hands-on-Erfahrung bringe ich auch Konzernpraxis mit. Während meines dualen Studiums bei der Deutschen Telekom AG habe ich im agilen Team Web-Onboarding-Features entwickelt und Prozesse automatisiert.\n\nWas meine Verfügbarkeit angeht, sieht es sehr gut aus: Im April starte ich in mein 5. Semester Medieninformatik an der BHT. Da ich in den vergangenen Semestern bereits vorgearbeitet habe, stehen jetzt nur noch drei Module (sowie ein Teamprojekt) an. Ich habe also das theoretische Fundament bereits gelegt, wenig Uni-Stress und mehr als genug Zeit und Fokus für die Arbeit bei Ihnen. Im 6. Semester folgt dann nur noch die Bachelorarbeit.\n\nIch bin ab sofort einsatzbereit und würde mich freuen, bei itestra an echten Problemlösungen mitzuarbeiten. Auf ein persönliches Kennenlernen freue ich mich sehr.",
+      "Ich bin zufällig auf Ihr Unternehmen aufmerksam geworden, als ich jemanden mit einem Ihrer Firmen-Shirts gesehen habe, auf dem ein treffender Spruch über Code stand. Bei meiner anschließenden Recherche hat mich sofort begeistert, dass Sie sich auf Individualsoftware spezialisieren, denn das ist genau meine Leidenschaft.\n\nMich reizt an der Softwareentwicklung am meisten, echte und greifbare Probleme zu lösen. Das habe ich entdeckt, als ich bei einem Freund und Anwalt in der Kanzlei war. Dort fiel mir auf, dass fast 90 % der Aufgaben manuell und sehr unstrukturiert abgewickelt wurden. Ich wusste, dass ich mit individuellen Lösungen immense Erleichterungen für die Mitarbeiter bewirken kann. Deshalb habe ich mit einem Partner zusammen ein maßgeschneidertes CRM-System als Webanwendung mit Next.js und PostgreSQL entwickelt. Das System ist aktuell fest im Kanzleialltag integriert, übernimmt die vorher manuellen Prozesse und wird in unserer Freizeit stetig weiterentwickelt.\n\nNeben der Erfahrung mit einem eigenen Projekt bringe ich auch mehrjährige Berufserfahrung durch mein duales Studium bei der Deutschen Telekom AG mit. Dort habe ich im agilen Team Onboarding-Features für eine Webanwendung entwickelt und mit VBA Prozesse automatisiert.\n\nIch studiere derzeit im 5. Semester Medieninformatik an der BHT. Für die letzten zwei Semester meines Studiums möchte ich die freie Zeit nutzen, um meine bereits starken Fähigkeiten weiter in einem beruflichen Umfeld auszubauen. Dafür suche ich aktuell nach einer Position als Werkstudent Softwareentwickler / Webentwicklung.\n\n Ich bin überzeugt, dass meine technischen Fähigkeiten, meine Lernbereitschaft und meine Motivation gut zu Ihnen passen. Meinen Bachelorabschluss werde ich voraussichtlich Anfang 2027 abschließen. Bis dahin bin ich als Werkstudent flexibel einsetzbar und kann mir gut vorstellen, auch darüber hinaus Teil Ihres Unternehmens zu bleiben.\n\nIch bin ab sofort einsatzbereit und würde mich freuen, bei itestra an echten Problemlösungen mitzuarbeiten. Auf ein persönliches Kennenlernen freue ich mich sehr.",
     closing: "Mit freundlichen Grüßen",
   },
 };
