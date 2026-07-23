@@ -1,8 +1,9 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { TimelineEntry, DetailItem, TimelineCategory } from "../types/index";
+import { TimelineEntry } from "../types/index";
 import telekomLogo from "../assets/telekom.png";
 import immoscoutLogo from "../assets/immoscout24.png";
+import srpLogo from "../assets/srp-logo.png";
 import { useLanguage } from "../context/LanguageContext";
 
 interface TimelineProps {
@@ -14,11 +15,13 @@ const Timeline: React.FC<TimelineProps> = ({ entries, label }) => {
   const reversedEntries = [...entries].reverse();
   const { language } = useLanguage();
   const getCompanyLogo = (institution: string): string | undefined => {
-    switch (institution.toLowerCase()) {
-      case "deutsche telekom ag":
+    switch (institution) {
+      case "Deutsche Telekom AG":
         return telekomLogo;
-      case "immoscout24":
+      case "ImmoScout24":
         return immoscoutLogo;
+      case "Systementwicklung für Raumbezogene Planung GmbH":
+        return srpLogo;
       default:
         return undefined;
     }

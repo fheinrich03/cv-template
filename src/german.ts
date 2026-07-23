@@ -15,7 +15,7 @@ export const germanData: ResumeData = {
   name: "Felix Heinrich",
   title: "Student & Fullstack-Softwareentwickler",
   summary:
-    "Motivierter Informatikstudent (Abschluss Wintersemester 2026/27) mit über 4 Jahren praktischer Erfahrung als Fullstack-Entwickler bei ImmoScout24 und der Deutschen Telekom. Spezialisiert auf moderne Webtechnologien (React, TypeScript, Java) und Cloud-Lösungen (AWS, Docker, CI/CD).",
+    "Motivierter Informatikstudent (Abschluss Sommersemester 2027) mit über 4 Jahren praktischer Erfahrung als Fullstack-Entwickler bei ImmoScout24 und der Deutschen Telekom. Spezialisiert auf moderne Webtechnologien (React, TypeScript, Java) und Cloud-Lösungen (AWS, Docker, CI/CD).",
   contact: {
     email: {
       label: "heinrichfelix03@gmail.com",
@@ -75,7 +75,7 @@ export const germanData: ResumeData = {
       type: "experience",
       title: "Duales Studium bei der Deutschen Telekom AG",
       institution: "Deutsche Telekom AG",
-      period: "Oktober 2021 – September 2023",
+      period: "Okt 2021 – Sept 2023",
       details: [
         {
           label: "Einsatzort",
@@ -85,7 +85,6 @@ export const germanData: ResumeData = {
           label: "Projekte",
           content: [
             "Kahoot-Klon, Quantum Secure Communication (Open VPN)",
-            "Kubernetes, Docker, CI/CD",
           ],
         },
         {
@@ -98,7 +97,7 @@ export const germanData: ResumeData = {
         },
         {
           label: "Erfahrungen",
-          content: ["Angular, Spring Boot, Python, Kotlin, Android Studio"],
+          content: ["Angular, Spring Boot, Python, Kotlin, Android Studio, Docker"],
         },
       ],
     },
@@ -106,7 +105,7 @@ export const germanData: ResumeData = {
       type: "experience",
       title: "Werkstudent Softwareentwickler (Webentwicklung, Full Stack)",
       institution: "ImmoScout24",
-      period: "November 2023 – August 2025",
+      period: "Nov 2023 – Aug 2025",
       details: [
         {
           label: "Tätigkeiten",
@@ -127,7 +126,7 @@ export const germanData: ResumeData = {
         },
         {
           label: "Erfahrungen",
-          content: ["React, Java, AWS EC2, S3, IAM, PostgreSQL, Jenkins"],
+          content: ["React, Java, Amazon EC2, S3, IAM, PostgreSQL, Jenkins"],
         },
       ],
     },
@@ -135,7 +134,7 @@ export const germanData: ResumeData = {
       type: "experience",
       title: "Werkstudent Softwarenentwickler bei SRP",
       institution: "Systementwicklung für Raumbezogene Planung GmbH",
-      period: "September 2025 – heute",
+      period: "Sept 2025 – Dez 2025",
       details: [
         {
           label: "Tätigkeiten",
@@ -156,7 +155,7 @@ export const germanData: ResumeData = {
       title:
         "B.Sc. Informations- und Kommunikationstechnik (Wechsel nach 4. Semester)",
       institution: "HTWK Leipzig",
-      period: "Oktober 2021 – September 2023",
+      period: "Okt 2021 – Sept 2023",
       details: [
         {
           label: "Relevante Module",
@@ -172,9 +171,9 @@ export const germanData: ResumeData = {
     {
       type: "education",
       title:
-        "B.Sc. Angewandte Informatik (voraussichtlicher Abschluss: Wintersemester 2026/27)",
+        "B.Sc. Angewandte Informatik (voraussichtlicher Abschluss: Sommersemester 2027)",
       institution: "HTW Berlin",
-      period: "Oktober 2023 – Heute",
+      period: "Okt 2023 – Heute",
       details: [
         {
           label: "Relevante Module",
@@ -227,10 +226,7 @@ export const germanData: ResumeData = {
     },
     {
       category: "Datenbanken",
-      items: [
-        { name: "PostgreSQL", level: "2" },
-        { name: "MySQL", level: "2" },
-      ],
+      items: [{ name: "PostgreSQL", level: "2" }],
     },
     {
       category: "Tools & Versionskontrolle",

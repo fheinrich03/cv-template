@@ -15,7 +15,7 @@ export const englishData: ResumeData = {
   name: "Felix Heinrich",
   title: "Student & Full Stack Software Developer",
   summary:
-    "Motivated Computer Science student (graduation winter 2026/27) with over 2 years of practical experience as a Full Stack Developer at ImmoScout24 and Deutsche Telekom. Specialized in modern web technologies (React, TypeScript, Java) and cloud solutions (AWS, Docker, CI/CD).",
+    "Motivated Computer Science student (graduation summer 2027) with over 2 years of practical experience as a Full Stack Developer at ImmoScout24 and Deutsche Telekom. Specialized in modern web technologies (React, TypeScript, Java) and cloud solutions (AWS, Docker, CI/CD).",
   contact: {
     email: {
       label: "heinrichfelix03@gmail.com",
@@ -75,7 +75,7 @@ export const englishData: ResumeData = {
       type: "experience",
       title: "Dual Studies at Deutsche Telekom AG",
       institution: "Deutsche Telekom AG",
-      period: "October 2021 – September 2023",
+      period: "Oct 2021 – Sept 2023",
       details: [
         {
           label: "Location",
@@ -85,7 +85,6 @@ export const englishData: ResumeData = {
           label: "Projects",
           content: [
             "Kahoot Clone, Quantum Secure Communication (Open VPN)",
-            "Kubernetes, Docker, CI/CD",
           ],
         },
         {
@@ -98,7 +97,7 @@ export const englishData: ResumeData = {
         },
         {
           label: "Tech Stack",
-          content: ["Angular, Spring Boot, Python, Kotlin, Android Studio"],
+          content: ["Angular, Spring Boot, Python, Kotlin, Android Studio, Docker"],
         },
       ],
     },
@@ -106,7 +105,7 @@ export const englishData: ResumeData = {
       type: "experience",
       title: "Working Student Software Developer (Web Development, Full Stack)",
       institution: "ImmoScout24",
-      period: "November 2023 – Present",
+      period: "Nov 2023 – Aug 2025",
       details: [
         {
           label: "Responsibilities",
@@ -128,7 +127,7 @@ export const englishData: ResumeData = {
         },
         {
           label: "Tech Stach",
-          content: ["React, Java, Amazon EC2, S3, IAM, PostgreSQL, MySQL"],
+          content: ["React, Java, Amazon EC2, S3, IAM, PostgreSQL, Jenkins"],
         },
       ],
     },
@@ -136,7 +135,7 @@ export const englishData: ResumeData = {
       type: "experience",
       title: "Working Student - Software Developer",
       institution: "Systementwicklung für Raumbezogene Planung GmbH",
-      period: "September 2025 – today",
+      period: "Sept 2025 – Dec 2025",
       details: [
         {
           label: "Responsibilities",
@@ -157,7 +156,7 @@ export const englishData: ResumeData = {
       title:
         "B.Sc. Information and Communication Technology (Transferred after 4th Semester)",
       institution: "HTWK Leipzig",
-      period: "October 2021 – September 2023",
+      period: "Oct 2021 – Sept 2023",
       details: [
         {
           label: "Relevant Modules",
@@ -173,9 +172,9 @@ export const englishData: ResumeData = {
     {
       type: "education",
       title:
-        "B.Sc. Applied Computer Science (Expected Graduation: Winter Semester 2026/27)",
+        "B.Sc. Applied Computer Science (Expected Graduation: Summer 2027)",
       institution: "HTW Berlin",
-      period: "October 2023 – Present",
+      period: "Oct 2023 – Present",
       details: [
         {
           label: "Relevant Modules",
@@ -228,10 +227,7 @@ export const englishData: ResumeData = {
     },
     {
       category: "Data Bases",
-      items: [
-        { name: "PostgreSQL", level: "2" },
-        { name: "MySQL", level: "2" },
-      ],
+      items: [{ name: "PostgreSQL", level: "2" }],
     },
     {
       category: "Tools & Version Control",
