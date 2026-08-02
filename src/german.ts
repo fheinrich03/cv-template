@@ -15,7 +15,7 @@ export const germanData: ResumeData = {
   name: "Felix Heinrich",
   title: "Student & Fullstack-Softwareentwickler",
   summary:
-    "Motivierter Informatikstudent (Abschluss Sommersemester 2027) mit über 4 Jahren praktischer Erfahrung als Fullstack-Entwickler bei ImmoScout24 und der Deutschen Telekom. Spezialisiert auf moderne Webtechnologien (React, TypeScript, Java) und Cloud-Lösungen (AWS, Docker, CI/CD).",
+    "Motivierter Informatikstudent (Abschluss Wintersemester 2026/27) mit über 4 Jahren praktischer Erfahrung als Fullstack-Entwickler. Spezialisiert auf moderne Webtechnologien (React, Angular, Spring Boot) und Cloud-Lösungen (AWS, Docker, CI/CD).",
   contact: {
     email: {
       label: "heinrichfelix03@gmail.com",
@@ -73,27 +73,17 @@ export const germanData: ResumeData = {
   timeline: [
     {
       type: "experience",
-      title: "Duales Studium bei der Deutschen Telekom AG",
+      title: "Duales Studium",
       institution: "Deutsche Telekom AG",
       period: "Okt 2021 – Sept 2023",
       details: [
         {
-          label: "Einsatzort",
-          content: ["IT und T-Labs"],
-        },
-        {
           label: "Projekte",
-          content: [
-            "Kahoot-Klon, Quantum Secure Communication (Open VPN)",
-          ],
+          content: ["Kahoot-Klon, Quantum Secure Communication (Open VPN)"],
         },
         {
           label: "Tätigkeiten",
-          content: ["Frontend- und Backend-Entwicklung, Python-Scripts"],
-        },
-        {
-          label: "Arbeitsweise",
-          content: ["Projektplanung und agiles Arbeiten im Team"],
+          content: ["Frontend- & Backend-Entwicklung, Python-Scripts, Projektplanung, agiles Arbeiten im Team"],
         },
         {
           label: "Erfahrungen",
@@ -103,22 +93,21 @@ export const germanData: ResumeData = {
     },
     {
       type: "experience",
-      title: "Werkstudent Softwareentwickler (Webentwicklung, Full Stack)",
+      title: "Werkstudent Softwareentwickler",
       institution: "ImmoScout24",
       period: "Nov 2023 – Aug 2025",
       details: [
         {
           label: "Tätigkeiten",
           content: [
-            "Frontend- und Backend-Entwicklung in mehreren Projekten",
-            "Arbeit im Scrum-Team mit regelmäßigen Sprints",
-            "Selbständige Entwicklung von Features von Implementierung bis Release",
+            "Full-Stack-Entwicklung in mehreren cross-funktionalen Projekten",
+            "Eigenständige Feature-Entwicklung & Bug Fixes von Implementierung bis Release",
           ],
         },
         {
           label: "Arbeitsweise",
           content: [
-            "Implementierung",
+            "Agile/Scrum mit regelmäßigen Sprints",
             "Testen und Qualitätssicherung",
             "UAT (User Acceptance Testing)",
             "Release-Management",
@@ -132,7 +121,7 @@ export const germanData: ResumeData = {
     },
     {
       type: "experience",
-      title: "Werkstudent Softwarenentwickler bei SRP",
+      title: "Werkstudent Softwareentwickler",
       institution: "Systementwicklung für Raumbezogene Planung GmbH",
       period: "Sept 2025 – Dez 2025",
       details: [
@@ -151,6 +140,30 @@ export const germanData: ResumeData = {
       ],
     },
     {
+      type: "experience",
+      title: "Werkstudent Softwareentwickler",
+      institution: "ITONICS",
+      period: "Feb 2026 – Heute",
+      details: [
+        {
+          label: "Tätigkeiten",
+          content: [
+            "Design System Entwicklung: Pflege & Weiterentwicklung",
+            "Bug Fixes & Feature-Implementierung",
+            "Settings Migration Projekt (globales Settings Modal)",
+          ],
+        },
+        {
+          label: "Architektur",
+          content: ["Monorepo mit Angular Nx, Headless UI, Storybook & Figma"],
+        },
+        {
+          label: "Technologien",
+          content: ["Angular, TypeScript, Nx, Storybook"],
+        },
+      ],
+    },
+    {
       type: "education",
       title:
         "B.Sc. Informations- und Kommunikationstechnik (Wechsel nach 4. Semester)",
@@ -159,31 +172,20 @@ export const germanData: ResumeData = {
       details: [
         {
           label: "Relevante Module",
-          content: [
-            "Projekt 1",
-            "Programmierung 1 & 2 (Java, C)",
-            "Technische Informatik",
-            "Informations- und Codierungstheorie",
-          ],
+          content: ["Projekt 1, Programmierung 1 & 2 (Java, C), Technische Informatik, Informations- und Codierungstheorie"],
         },
       ],
     },
     {
       type: "education",
       title:
-        "B.Sc. Angewandte Informatik (voraussichtlicher Abschluss: Sommersemester 2027)",
+        "B.Sc. Angewandte Informatik (voraussichtlicher Abschluss: Wintersemester 2026/27)",
       institution: "HTW Berlin",
       period: "Okt 2023 – Heute",
       details: [
         {
           label: "Relevante Module",
-          content: [
-            "Software Engineering (Python)",
-            "Programmierung (Java)",
-            "Datenbanken",
-            "Web Application Development (HTML, CSS, JavaScript)",
-            "Algorithmen und Datenstrukturen (Go)",
-          ],
+          content: ["Web Application Development, Frontend Development, Verteilte Systeme, Cloud Computing, Software Engineering 1 & 2, Datenbanken, Algorithmen & Datenstrukturen"],
         },
       ],
     },
@@ -193,11 +195,11 @@ export const germanData: ResumeData = {
       category: "Programmiersprachen",
       items: [
         { name: "Python", level: "2" },
-        { name: "Kotlin", level: "3" },
+        { name: "Kotlin", level: "2" },
         { name: "TypeScript", level: "1" },
         { name: "Java", level: "1" },
         { name: "HTML", level: "1" },
-        { name: "CSS", level: "1" },
+        { name: "CSS", level: "2" },
         { name: "Scala", level: "2" },
         { name: "Go", level: "3" },
       ],
@@ -207,10 +209,10 @@ export const germanData: ResumeData = {
       items: [
         { name: "React", level: "1" },
         { name: "Tailwind CSS", level: "1" },
-        { name: "Next.js", level: "2" },
+        { name: "Next.js", level: "1" },
         { name: "Spring Boot", level: "2" },
         { name: "AWS Amplify", level: "3" },
-        { name: "Angular", level: "2" },
+        { name: "Angular", level: "1" },
       ],
     },
     {
@@ -233,6 +235,7 @@ export const germanData: ResumeData = {
       items: [
         { name: "Git", level: "1" },
         { name: "AI Tools", level: "1" },
+        { name: "NPM", level: "2" },
         { name: "Figma", level: "2" },
       ],
     },

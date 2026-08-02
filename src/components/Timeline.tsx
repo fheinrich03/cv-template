@@ -4,6 +4,7 @@ import { TimelineEntry } from "../types/index";
 import telekomLogo from "../assets/telekom.png";
 import immoscoutLogo from "../assets/immoscout24.png";
 import srpLogo from "../assets/srp-logo.png";
+import itonicsLogo from "../assets/itonics-logo.png";
 import { useLanguage } from "../context/LanguageContext";
 
 interface TimelineProps {
@@ -22,6 +23,8 @@ const Timeline: React.FC<TimelineProps> = ({ entries, label }) => {
         return immoscoutLogo;
       case "Systementwicklung für Raumbezogene Planung GmbH":
         return srpLogo;
+      case "ITONICS":
+        return itonicsLogo;
       default:
         return undefined;
     }
